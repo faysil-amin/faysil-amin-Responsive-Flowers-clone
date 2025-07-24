@@ -14,9 +14,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style/style.css" />
   </head>
-  <body class="mx-auto font-(--font-inter) px-5 sm:max-w-6xl overflow-x-hidden">
+  <body class="font-(--font-inter) overflow-x-hidden">
     <!-- header -->
-    <header class="">
+    <header class="mx-auto px-5 sm:max-w-6xl">
       <!-- navbar -->
       <nav class="flex items-center justify-between mt-10">
         <!-- navbar logo image -->
@@ -70,7 +70,7 @@
     <!-- main -->
     <main class="mt-[120px]">
       <!-- section one -->
-      <section>
+      <section class="mx-auto px-5 sm:max-w-6xl">
         <div class="text-center overflow-x-hidden">
           <h1 class="text-[28px] font-bold">
             <span class="text-[#E95A08]">Our</span> Plants
@@ -176,7 +176,9 @@
       </section>
 
       <!-- section two -->
-      <section class="mt-[210px] sm:flex sm:items-center sm:justify-between">
+      <section
+        class="mt-[210px] sm:flex sm:items-center sm:justify-between mx-auto px-5 sm:max-w-6xl"
+      >
         <!-- left -->
         <div class="flex-1 sm:relative">
           <img class="w-full sm:w-[80%]" src="assets/flower-store.png" alt="" />
@@ -223,7 +225,7 @@
       </section>
 
       <!-- section three -->
-      <section class="mt-[120px]">
+      <section class="mt-[120px] mx-auto px-5 sm:max-w-6xl">
         <!-- left -->
         <div class="text-center">
           <h1 class="text-[28px] font-bold">
@@ -237,7 +239,6 @@
             variety of fresh.
           </p>
         </div>
-
         <!-- right -->
         <div
           class="sm:flex sm:items-center sm:justify-between gap-5.5 mt-[120px]"
@@ -286,6 +287,29 @@
               <a class="text-white underline" href="">Shop Now</a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- section four -->
+      <section
+        class="bg-[url(/assets/news-letter-bg.png)] w-screen h-[533px] mt-[120px] relative"
+      >
+        <div
+          class="text-center absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] w-full"
+        >
+          <h1 class="text-xl font-bold font-serif text-white mb-8 sm:text-5xl">
+            Join the colorful Bunch
+          </h1>
+          <input
+            type="text"
+            placeholder="Write email"
+            class="w-[50%] py-5 text-[#00000080] bg-white pl-5"
+          />
+          <button
+            class="py-5 px-10 bg-[#E95A08] text-base font-medium text-white"
+          >
+            <a href="">Subscribe</a>
+          </button>
         </div>
       </section>
     </main>
